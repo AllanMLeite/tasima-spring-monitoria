@@ -1,0 +1,28 @@
+{
+    "run": {
+        "default": "",
+        "items": [
+            {
+                "name": "velhobarreiro",
+                "projectName": "velhobarreiro",
+                "workingDirectory": "c:\\tasima-spring-monitoria",
+                "args": [],
+                "vmargs": [],
+                "preLaunchTask": ""
+            }
+        ]
+    },
+    "debug": {
+        "default": "",
+        "items": [
+            {
+                "name": "velhobarreiro",
+                "projectName": "velhobarreiro",
+                "workingDirectory": "c:\\tasima-spring-monitoria",
+                "args": [],
+                "vmargs": [],
+                "preLaunchTask": ""
+            }
+        ]
+    }
+}
