@@ -9,6 +9,10 @@ public class Metrica {
         setNome(nome);
     }
 
+    public Metrica(){
+
+    }
+
     public long getId() {
         return id;
     }
@@ -23,5 +27,10 @@ public class Metrica {
 
     public void setNome(String nome) {
         this.nome = nome;
+    }
+
+    @Override
+    public String toString(){
+        return "id: " + id + ", nome: " + nome;
     }
 }
