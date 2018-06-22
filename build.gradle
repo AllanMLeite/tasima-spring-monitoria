@@ -1,3 +1,5 @@
+
+
 buildscript {
 	ext {
 		springBootVersion = '2.0.2.RELEASE'
@@ -21,12 +23,13 @@ sourceCompatibility = 1.8
 
 repositories {
 	mavenCentral()
-}
+} 
 
 
 dependencies {
 	compile("org.springframework.boot:spring-boot-starter-web")
 	compile('org.springframework.boot:spring-boot-starter-data-jpa')
+	compile('javax.xml.bind:jaxb-api')
 	runtime('com.h2database:h2')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 	testCompile('com.jayway.jsonpath:json-path')
