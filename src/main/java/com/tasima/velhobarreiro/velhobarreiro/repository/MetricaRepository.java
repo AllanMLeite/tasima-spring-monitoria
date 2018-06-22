@@ -1,5 +1,6 @@
 package com.tasima.velhobarreiro.velhobarreiro.repository;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicLong;
 
@@ -12,6 +13,10 @@ public class MetricaRepository {
 
     private List<Metrica> metricas;
     private final AtomicLong idSequence = new AtomicLong();
+
+    public MetricaRepository(){
+        metricas = new ArrayList<>();
+    }
 
     public Metrica incluir(Metrica metrica){
         metrica.setId(idSequence.incrementAndGet());

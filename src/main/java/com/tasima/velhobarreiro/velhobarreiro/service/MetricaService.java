@@ -26,7 +26,7 @@ public class MetricaService {
 
     private void validaObrigatoriedadeNome(String nome){
         if(StringUtils.isEmpty(nome))
-            throw new RestClientException("Informe o nome");
+            throw new RestClientException("Informe o nome.");
     }
 
     public void setMetricaRepository(MetricaRepository metricaRepository){
