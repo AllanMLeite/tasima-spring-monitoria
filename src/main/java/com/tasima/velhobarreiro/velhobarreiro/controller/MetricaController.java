@@ -18,7 +18,7 @@ public class MetricaController {
     private MetricaService metricaService;
 
     @RequestMapping("/metrica")
-    public Metrica incluirMetrica(@RequestParam(value="nome") String nome) {
+    public Metrica incluirMetrica(@RequestParam(value="nome", defaultValue = "") String nome) {
         return metricaService.salvarMetrica(nome);
     }
 }
